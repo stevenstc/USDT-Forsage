@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import TronWeb from "tronweb";
 
 import Utils from "../../utils";
-import Home from "../Home";
 import BackOffice from "../BackOffice";
 import TronLinkGuide from "../TronLinkGuide";
 
@@ -139,7 +138,7 @@ class App extends Component {
         case "viewOffice": 
         case "viewoffice": return(<><BackOffice url={interrogant+getString}/></>);
       
-        default:  return(<><Home /></>);
+        default:  return(<><BackOffice url={interrogant+getString}/></>);
       }
 
 

@@ -62,7 +62,7 @@ export default class TronLinkInfo extends Component {
           Wallet:
         </h2>
         <p>
-            <strong>{accountAddress}</strong><br/><br/>
+            <strong style={{"word-break":"break-all"}}>{accountAddress}</strong><br/><br/>
 
           <strong>Balance:</strong><br/>
             {accountBalance} <strong>TRX</strong><br/>

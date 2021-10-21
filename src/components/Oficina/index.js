@@ -212,21 +212,44 @@ export default class EarnTron extends Component {
 
         //console.log(ganado);
         canasta[i-1] = (
-          <div className="col-lg-4 col-md-4 col-sm-6" key={"level"+i}>
-            <div className="choose__item">
-                <img src={"img/choose/choose-"+i+".svg"} alt="" width="50%" />
-                <h5>Level</h5>
-                <p>Referers {matrix[1].length+(matrix[3]*3)} <strong>|</strong> cycles {matrix[3]}</p>
+          <div class="col-lg-4 col-md-6 col-12" key={"level"+i}>
+            <div class="card">
+              <div class="card-body" style={{"background": "rgba(100, 100, 100, 1)"}}>
+                <h2> Level {i} || 400</h2>
+                <hr/>
+                <div class="row">
+                  <div class="col-4"><span class="grey"><i class="fa fa-users"></i></span></div>
+                  <div class="col-4"><span class="grey"><i class="fa fa-users"></i></span></div>
+                  <div class="col-4"><span class="grey"><i class="fa fa-users"></i></span></div>
+                </div>
+                <p class="card-text"> <br/>
+                  <button class="btn btn-secondary">Buyed</button>
+                  <br/>
+                  <i class="fa fa-users"></i>{matrix[1].length+(matrix[3]*3)}|&nbsp;&nbsp;<i class="fa fa-refresh"></i> {matrix[3]} </p>
+              </div>
             </div>
           </div>
+          
         );
 
       }else{
 
         canasta[i-1] = (
-          <div className="col-lg-4 col-md-4 col-sm-6" key={"level"+i}>
-            <div className="choose__item">
-                <span style={{"fontSize" : "22px"}}><br /><strong>Level {i} (Inactive) </strong></span>
+          <div class="col-lg-4 col-md-6 col-12" key={"level"+i}>
+            <div class="card">
+              <div class="card-body" style={{"background": "rgba(100, 100, 100, 1)"}}>
+                <h2> ({i}) 400</h2>
+                <hr/>
+                <div class="row">
+                  <div class="col-4"><span class="grey"><i class="fa fa-users"></i></span></div>
+                  <div class="col-4"><span class="grey"><i class="fa fa-users"></i></span></div>
+                  <div class="col-4"><span class="grey"><i class="fa fa-users"></i></span></div>
+                </div>
+                <p class="card-text"> <br/>
+                  <button class="btn btn-secondary">Buy level</button>
+                  <br/>
+                  <i class="fa fa-users"></i>&nbsp;1 |&nbsp;&nbsp;<i class="fa fa-refresh"></i> 0 </p>
+              </div>
             </div>
           </div>
         );

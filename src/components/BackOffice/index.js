@@ -10,31 +10,41 @@ export default class BackOffice extends Component {
 
       return (
         <>
-        <section className="hero set-bg" data-setbg="img/hero-bg.jpg" style={{"backgroundImage": "url('img/hero-bg.jpg')"}}>
-          <div className="container">
-              <div className="row">
-                  <div className="col-lg-5">
-                      <div className="hero__text">
-                          <TronLinkInfo tronWeb={window.tronWeb}/>
-                      </div>
-                  </div>
-                  <div className="col-lg-5 offset-lg-2">
-                      <div className="hero__form">
-                          
-                          <CrowdFunding />
-                          
-                      </div>
-                  </div>
-              </div>
-          </div>
-        </section>
+          
+    <div className="col-lg-4 col-sm-12">
+      <div className="jumbotron  text-white text-center" style={{"background": "rgba(100, 100, 100, 0.24)"}}> <img src="images/TMC-blanco-verde.svg" alt="" className="img-fluid" />
+		  <hr/>
+      <TronLinkInfo tronWeb={window.tronWeb}/>
 
-        <section className="choose spad">
-          <div className="container">
-            <Oficina /> 
+            <CrowdFunding />
+        <p ><b>Id:</b> <br />
+          <b>Wallet:</b><br />
+          <b>My partners:</b><br/>
+        </p>
+        <hr />
+        <p> <b>Earned:</b> <br />
+          23423432 <b>TRX</b> ($23232)</p>
+        <div className="row justify-content-center text-center">
+          <div className="col-auto">
+            <p>
+              <input type="text" id="linkref" disabled />
+              <a className="btn btn-success btn-lg" href="#" role="button">Copy Referal Link</a> </p>
           </div>
-        </section>
-
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-8 col-sm-12">
+      <div class="jumbotron text-white text-center" style={{"background": "rgba(100, 100, 100, 0.24)"}}>
+        <div class="row">
+          <Oficina /> 
+    
+        </div>
+        <p class="text-center">contador de ciclos y personas</p>
+      </div>
+    </div>
+            
+                          
+            
       </>
       );
   }
