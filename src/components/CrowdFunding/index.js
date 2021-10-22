@@ -192,7 +192,7 @@ export default class EarnTron extends Component {
     return (
       
 
-        <div className="text-center">
+      <div class="row">
           <h6>
             Balance: {this.state.balanceUSDT} <strong>USDT</strong><br />
           </h6>

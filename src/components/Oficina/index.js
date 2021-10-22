@@ -140,6 +140,7 @@ export default class EarnTron extends Component {
   async Link() {
 
     let mydireccion = await window.tronWeb.trx.getAccount();
+    console.log(mydireccion);
       mydireccion = window.tronWeb.address.fromHex(mydireccion.address);
 
       var user = await Utils.contract.users(mydireccion).call();
@@ -283,56 +284,249 @@ export default class EarnTron extends Component {
     return (
 
       <>
+<main class="Layout_content__3Ygen">
+                <div>
+                    <section class="widget Widget_widget__32uL4">
 
-        <div className="row">
-          <div className="col-lg-12">
-            <div className="section-title">
-              <h2>My referral link:</h2>
-              <p>
-                <a style={{"color":"blue"}} href={this.state.link}>{this.state.link}</a> &nbsp;&nbsp;
-                <CopyToClipboard text={this.state.link}>
-                  <button type="button" className="primary-btn">Copy</button>
-                </CopyToClipboard>
-              </p>
-            </div>
-          </div>
-        </div>    
-
-        <div className="row">
-          <div className="col-lg-4">
-            <div className="section-title">
-              <h2>My invested:</h2>
-              <p>
-                {this.state.invertido} USDT
-              </p>
-            </div>
-          </div>
-          <div className="col-lg-4">
-            <div className="section-title">
-              <h2>Earned:</h2>
-              <p>
-              {this.state.ganado} USDT
-              </p>
-            </div>
-          </div>
-          <div className="col-lg-4">
-            <div className="section-title">
-              <h2>People:</h2>
-              <p>
-              {this.state.personas}
-              </p>
-            </div>
-          </div>
-        </div>   
-        <hr></hr>
-
-        <div className="row">
-
-          {this.state.canastas}
-                  
-        </div>
-
-      </>
+                        <div class="Widget_widgetControls__B4-0r widget-controls">
+                            <span>
+                                <button id="collapseId-08c297e8-ed01-425e-8d08-93cf64b9410e"><i class="fa fa-angle-down"></i></button>
+                            </span>
+                            <button id="closeId-08c297e8-ed01-425e-8d08-93cf64b9410e"><strong class="text-gray-light"></strong></button>
+                        </div>
+                        <div aria-hidden="false" class="rah-static rah-static--height-auto" style={{height: 'auto', overflow: 'visible'}}>
+                            <div>
+                                <div class="Widget_widgetBody__34soD widget-body">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-2 col-xl-3">
+                                            <section class="widget Widget_widget__32uL4 widget-auth mx-auto pack pack-enable">
+                                                <header class="Widget_title__1U9X_">
+                                                    <div class="pack-header pack-header-enable">
+                                                        <div class="pack-ind"><span class="badge badge-dark-no-border">1</span></div>
+                                                        <div class="text-center mb-sm" style={{padding: '5px'}}><h5>100</h5></div>
+                                                    </div>
+                                                </header>
+                                                <div aria-hidden="false" class="rah-static rah-static--height-auto" style={{height: 'auto', overflow: 'visible'}}>
+                                                    <div>
+                                                        <div class="Widget_widgetBody__34soD widget-body">
+                                                            <div class="pack-body">
+                                                                <div class="mt row"></div>
+                                                                <div class="mt row">
+                                                                    <span class="badge-left badge badge-blue-light"><i class="fa fa-users"></i></span><span class="badge-center badge badge-gray"><i class="fa fa-users"></i></span>
+                                                                    <span class="badge-right badge badge-gray"><i class="fa fa-users"></i></span>
+                                                                </div>
+                                                            </div>
+                                                            <footer>
+                                                                <div color="transparent" class="btn-xs float-left py-0" id="load-parthers-btn"><i class="fa fa-users"></i> 11</div>
+                                                                <div color="transparent" class="btn-xs float-right py-0" id="load-notifications-btn"><i class="fa fa-refresh"></i> 5</div>
+                                                            </footer>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <div class="Widget_widgetBackground__1F6dp" style={{display: 'none'}}></div>
+                                        </div>
+                                        <div class="col-12 col-lg-2 col-xl-3">
+                                            <section class="widget Widget_widget__32uL4 widget-auth mx-auto pack pack-enable">
+                                                <header class="Widget_title__1U9X_">
+                                                    <div class="pack-header pack-header-enable">
+                                                        <div class="pack-ind"><span class="badge badge-dark-no-border">2</span></div>
+                                                        <div class="text-center mb-sm" style={{padding: '5px'}}><h5>200</h5></div>
+                                                    </div>
+                                                </header>
+                                                <div aria-hidden="false" class="rah-static rah-static--height-auto" style={{height: 'auto', overflow: 'visible'}}>
+                                                    <div>
+                                                        <div class="Widget_widgetBody__34soD widget-body">
+                                                            <div class="pack-body">
+                                                                <div class="mt row"></div>
+                                                                <div class="mt row">
+                                                                    <span class="badge-left badge badge-blue-light"><i class="fa fa-users"></i></span><span class="badge-center badge badge-blue-light"><i class="fa fa-users"></i></span>
+                                                                    <span class="badge-right badge badge-gray"><i class="fa fa-users"></i></span>
+                                                                </div>
+                                                            </div>
+                                                            <footer>
+                                                                <div color="transparent" class="btn-xs float-left py-0" id="load-parthers-btn"><i class="fa fa-users"></i> 11</div>
+                                                                <div color="transparent" class="btn-xs float-right py-0" id="load-notifications-btn"><i class="fa fa-refresh"></i> 5</div>
+                                                            </footer>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <div class="Widget_widgetBackground__1F6dp" style={{display: 'none'}}></div>
+                                        </div>
+                                        <div class="col-12 col-lg-2 col-xl-3">
+                                            <section class="widget Widget_widget__32uL4 widget-auth mx-auto pack pack-enable">
+                                                <header class="Widget_title__1U9X_">
+                                                    <div class="pack-header pack-header-enable">
+                                                        <div class="pack-ind"><span class="badge badge-dark-no-border">3</span></div>
+                                                        <div class="text-center mb-sm" style={{padding: '5px'}}><h5>400</h5></div>
+                                                    </div>
+                                                </header>
+                                                <div aria-hidden="false" class="rah-static rah-static--height-auto" style={{height: 'auto', overflow: 'visible'}}>
+                                                    <div>
+                                                        <div class="Widget_widgetBody__34soD widget-body">
+                                                            <div class="pack-body">
+                                                                <div class="mt row"></div>
+                                                                <div class="mt row">
+                                                                    <span class="badge-left badge badge-gray"><i class="fa fa-users"></i></span><span class="badge-center badge badge-gray"><i class="fa fa-users"></i></span>
+                                                                    <span class="badge-right badge badge-gray"><i class="fa fa-users"></i></span>
+                                                                </div>
+                                                            </div>
+                                                            <footer>
+                                                                <div color="transparent" class="btn-xs float-left py-0" id="load-parthers-btn"><i class="fa fa-users"></i> 11</div>
+                                                                <div color="transparent" class="btn-xs float-right py-0" id="load-notifications-btn"><i class="fa fa-refresh"></i> 5</div>
+                                                            </footer>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <div class="Widget_widgetBackground__1F6dp" style={{display: 'none'}}></div>
+                                        </div>
+                                        <div class="col-12 col-lg-2 col-xl-3">
+                                            <section class="widget Widget_widget__32uL4 widget-auth mx-auto pack pack-buy">
+                                                <header class="Widget_title__1U9X_">
+                                                    <div class="pack-header pack-header-buy">
+                                                        <div class="pack-ind">
+                                                            <span class="badge badge-dark-no-border">4</span><span class="badge badge-pink"><i class="fa fa-power-off"></i></span>
+                                                        </div>
+                                                        <div class="text-center mb-sm" style={{padding: '5px'}}><h5>800</h5></div>
+                                                    </div>
+                                                </header>
+                                                <div aria-hidden="false" class="rah-static rah-static--height-auto" style={{height: 'auto', overflow: 'visible'}}>
+                                                    <div>
+                                                        <div class="Widget_widgetBody__34soD widget-body">
+                                                            <div class="pack-body">
+                                                                <div class="mt row"></div>
+                                                                <div class="mt row">
+                                                                    <p class="badge-center"><i class="fa fa-shopping-cart"></i></p>
+                                                                    <p class="badge-center badge-top">Activate&nbsp;</p>
+                                                                </div>
+                                                            </div>
+                                                            <footer></footer>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <div class="Widget_widgetBackground__1F6dp" style={{display: 'none'}}></div>
+                                        </div>
+                                        <div class="col-12 col-lg-2 col-xl-3">
+                                            <section class="widget Widget_widget__32uL4 widget-auth mx-auto pack pack-disabled">
+                                                <header class="Widget_title__1U9X_">
+                                                    <div class="pack-header pack-header-disabled">
+                                                        <div class="pack-ind"><span class="badge badge-dark-no-border">5</span></div>
+                                                        <div class="text-center mb-sm" style={{padding: '5px'}}><h5>100</h5></div>
+                                                    </div>
+                                                </header>
+                                                <div aria-hidden="false" class="rah-static rah-static--height-auto" style={{height: 'auto', overflow: 'visible'}}>
+                                                    <div>
+                                                        <div class="Widget_widgetBody__34soD widget-body">
+                                                            <div class="pack-body">
+                                                                <div class="mt row"></div>
+                                                                <div class="mt row">
+                                                                    <p class="badge-center"><i class="fa fa-shopping-cart"></i></p>
+                                                                    <p class="badge-center badge-top">&nbsp;</p>
+                                                                </div>
+                                                            </div>
+                                                            <footer></footer>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <div class="Widget_widgetBackground__1F6dp" style={{display: 'none'}}></div>
+                                        </div>
+                                        <div class="col-12 col-lg-2 col-xl-3">
+                                            <section class="widget Widget_widget__32uL4 widget-auth mx-auto pack pack-disabled">
+                                                <header class="Widget_title__1U9X_">
+                                                    <div class="pack-header pack-header-disabled">
+                                                        <div class="pack-ind"><span class="badge badge-dark-no-border">6</span></div>
+                                                        <div class="text-center mb-sm" style={{padding: '5px'}}><h5>200</h5></div>
+                                                    </div>
+                                                </header>
+                                                <div aria-hidden="false" class="rah-static rah-static--height-auto" style={{height: 'auto', overflow: 'visible'}}>
+                                                    <div>
+                                                        <div class="Widget_widgetBody__34soD widget-body">
+                                                            <div class="pack-body">
+                                                                <div class="mt row"></div>
+                                                                <div class="mt row">
+                                                                    <p class="badge-center"><i class="fa fa-shopping-cart"></i></p>
+                                                                    <p class="badge-center badge-top">&nbsp;</p>
+                                                                </div>
+                                                            </div>
+                                                            <footer></footer>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <div class="Widget_widgetBackground__1F6dp" style={{display: 'none'}}></div>
+                                        </div>
+                                        <div class="col-12 col-lg-2 col-xl-3">
+                                            <section class="widget Widget_widget__32uL4 widget-auth mx-auto pack pack-disabled">
+                                                <header class="Widget_title__1U9X_">
+                                                    <div class="pack-header pack-header-disabled">
+                                                        <div class="pack-ind"><span class="badge badge-dark-no-border">7</span></div>
+                                                        <div class="text-center mb-sm" style={{padding: '5px'}}><h5>400</h5></div>
+                                                    </div>
+                                                </header>
+                                                <div aria-hidden="false" class="rah-static rah-static--height-auto" style={{height: 'auto', overflow: 'visible'}}>
+                                                    <div>
+                                                        <div class="Widget_widgetBody__34soD widget-body">
+                                                            <div class="pack-body">
+                                                                <div class="mt row"></div>
+                                                                <div class="mt row">
+                                                                    <p class="badge-center"><i class="fa fa-shopping-cart"></i></p>
+                                                                    <p class="badge-center badge-top">&nbsp;</p>
+                                                                </div>
+                                                            </div>
+                                                            <footer></footer>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <div class="Widget_widgetBackground__1F6dp" style={{display: 'none'}}></div>
+                                        </div>
+                                        <div class="col-12 col-lg-2 col-xl-3">
+                                            <section class="widget Widget_widget__32uL4 widget-auth mx-auto pack pack-disabled">
+                                                <header class="Widget_title__1U9X_">
+                                                    <div class="pack-header pack-header-disabled">
+                                                        <div class="pack-ind"><span class="badge badge-dark-no-border">8</span></div>
+                                                        <div class="text-center mb-sm" style={{padding: '5px'}}><h5>800</h5></div>
+                                                    </div>
+                                                </header>
+                                                <div aria-hidden="false" class="rah-static rah-static--height-auto" style={{height: 'auto', overflow: 'visible'}}>
+                                                    <div>
+                                                        <div class="Widget_widgetBody__34soD widget-body">
+                                                            <div class="pack-body">
+                                                                <div class="mt row"></div>
+                                                                <div class="mt row">
+                                                                    <p class="badge-center"><i class="fa fa-shopping-cart"></i></p>
+                                                                    <p class="badge-center badge-top">&nbsp;</p>
+                                                                </div>
+                                                            </div>
+                                                            <footer></footer>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <div class="Widget_widgetBackground__1F6dp" style={{display: 'none'}}></div>
+                                        </div>
+                                    </div>
+                                    <footer class="text-sm card-footer" style={{height: '50px', maxHeight: '50px'}}>
+                                        <div class="mt row">
+                                            <div class="col-12 col-md-3">
+                                                <div color="transparent" class="btn-xs float-left py-0" id="load-notifications-btn" style={{height: '45px', maxHeight: '45px'}}><i class="fa fa-refresh"></i> Recycle count</div>
+                                            </div>
+                                            <div class="col-12 col-md-3">
+                                                <div color="transparent" class="btn-xs float-left py-0" id="load-notifications-btn" style={{height: '45px', maxHeight: '45px'}}><i class="fa fa-users"></i> Number partners in the slot</div>
+                                            </div>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="Widget_widgetBackground__1F6dp" style={{display: 'none'}}></div>
+                </div>
+            </main></>
       
     );
   }
