@@ -269,7 +269,7 @@ export default class EarnTron extends Component {
                                   <div class="mt row"></div>
                                   <div class="mt row"></div>
                                   <div class="mt row">
-                                  <div class="text-center mb-sm" style={{left: '30%'}}><button type="submit" class="auth-btn btn btn-success" style={{color: 'white', width:'100%'}}>Buyed</button></div>
+                                  <div class="text-center mb-sm" style={{position:'relative',left: '20%'}}><button type="submit" class="auth-btn btn btn-success" style={{color: 'white', width:'100%'}}>Buyed</button></div>
                                     
                                   </div>
                               </div>
@@ -307,7 +307,7 @@ export default class EarnTron extends Component {
                                   <div class="mt row"></div>
                                   <div class="mt row"></div>
                                   <div class="mt row">
-                                  <div class="text-center mb-sm" style={{left: '30%'}}><button type="submit" class="auth-btn btn btn-success" style={{color: 'white', width:'100%'}}>Buy level</button></div>
+                                  <div class="text-center mb-sm" style={{position:'relative',left: '20%'}}><button type="submit" class="auth-btn btn btn-success" style={{color: 'white', width:'100%'}}>Buy level</button></div>
                                     
                                   </div>
                               </div>
