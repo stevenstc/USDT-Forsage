@@ -1,8 +1,52 @@
 import React, { Component } from "react";
 
+import Utils from "../../utils";
+import contractAddress from "../Contract";
+
 import CrowdFunding from "../CrowdFunding";
-import TronLinkInfo from "../TronLinkInfo";
 export default class GeneralInfo extends Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            id: "N/A",
+            link: "Haz una inversión para obtener el LINK de referido"
+        }
+
+        this.Link = this.Link.bind(this);
+    }
+
+    async componentDidMount() {
+        await Utils.setContract(window.tronWeb, contractAddress);
+        setInterval(() => this.Link(), 1 * 1000);
+      }
+
+    async Link() {
+        let mydireccion = await window.tronWeb.trx.getAccount();
+        console.log(mydireccion);
+        mydireccion = window.tronWeb.address.fromHex(mydireccion.address);
+    
+        var user = await Utils.contract.users(mydireccion).call();
+    
+        if (await Utils.contract.isUserExists(mydireccion).call()) {
+          let loc = document.location.href;
+          if (loc.indexOf("?") > 0) {
+            loc = loc.split("?")[0];
+          }
+    
+          mydireccion = loc + "?ref=" + parseInt(user.id._hex);
+          this.setState({
+            id: parseInt(user.id._hex),
+            link: mydireccion,
+          });
+        } else {
+          this.setState({
+              id: "N/A",
+            link: "Haz una inversión para obtener el LINK de referido",
+          });
+        }
+      }
   
   render() {
 
@@ -19,18 +63,8 @@ export default class GeneralInfo extends Component {
                                 <p style={{fontSize: '16px'}}>Wallet</p>
                             </td>
                             <td style={{textAlign: 'right'}}>
-                                <p style={{fontWeight: 'bold', fontSize: '16px'}}>12</p>
-                                <p style={{textAlign: 'right',fontSize: '16px'}}>1e356n5y5hh <i class="fa fa-clipboard text-white"></i></p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style={{fontSize: '16px', textAlign: 'left'}}>My partners</td>
-                            <td><p style={{fontSize: '16px', textAlign: 'right'}}>11</p></td>
-                        </tr>
-                        <tr>
-                            <td style={{fontSize: '16px', textAlign: 'left'}}>l earned</td>
-                            <td style={{textAlign: 'right'}}>
-                                <p style={{fontSize: '16px'}}>$23232</p>
+                                <p style={{fontWeight: 'bold', fontSize: '16px'}}>{this.state.id}</p>
+                                <p style={{textAlign: 'right',fontSize: '16px', wordBreak:'break-all'}}>{window.tronWeb.defaultAddress.base58} <i class="fa fa-clipboard text-white"></i></p>
                             </td>
                         </tr>
                         <tr>
@@ -51,13 +85,13 @@ export default class GeneralInfo extends Component {
                                 <form>
                                     <div class="mt form-group">
                                         <div class="input-group input-group">
-                                            <input id="link" required="" name="link" placeholder="Link" type="text" class="input-transparent pl-3 form-control" />
+                                            <input id="link" required="" name="link" placeholder="Link" value={this.state.link} type="text" class="input-transparent pl-3 form-control" disabled/>
                                             <div class="bg-transparent input-group-prepend">
                                                 <span class="input-group-text"><i class="fa fa-clipboard text-white"></i></span>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="mt form-group"><button type="submit" class="auth-btn btn btn-success btn-sm" style={{color: 'white', width: '90%'}}>Copy referal link</button></div>
+                                    <div class="mt form-group"><button type="button" class="auth-btn btn btn-success btn-sm" onClick={() => {navigator.clipboard.writeText(this.state.link); window.alert("link copied!")}} style={{color: 'white', width: '90%'}}>Copy referal link</button></div>
                                     
                                 </form>
                             </div>
