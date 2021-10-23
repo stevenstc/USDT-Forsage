@@ -12,8 +12,8 @@
 .fa-instagram:before{content:"\f16d";}
 .fa-dribbble:before{content:"\f17d";}
 .fa-behance:before{content:"\f1b4";}
-
 [class^="icon-"]{font-family:'icomoon'!important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+
 .icon-arrow-up:before{content:"\e906";}
 
 body{margin:0;}
@@ -102,7 +102,7 @@ ul li{padding-left:.4rem;}
 .s-header{width:100%;height:96px;background-color:transparent;position:absolute;top:0;z-index:500;}
 .header-logo{display:inline-block;position:absolute;margin:0;padding:0;left:40px;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);z-index:501;}
 .header-logo a{display:block;margin:9px 0 0 0;padding:0;outline:0;border:none;width:150px;-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;}
-.header-nav{background:#0C0C0C;color:rgba(255, 255, 255, 0.25);font-family:"montserrat-light", sans-serif;font-size:1.3rem;line-height:1.846;padding:3.6rem 3rem 3.6rem 3.6rem;height:100%;width:280px;position:fixed;right:0;top:0;z-index:700;overflow-y:auto;overflow-x:hidden;-webkit-transition:all 0.5s ease;transition:all 0.5s ease;-webkit-transform:translateZ(0);-webkit-backface-visibility:hidden;-webkit-transform:translateX(100%);-ms-transform:translateX(100%);transform:translateX(100%);visibility:hidden;}
+.header-nav{background:#0C0C0C;color:rgba(255, 255, 255, 0.25);font-family:"montserrat-light", sans-serif;font-size:1.3rem;line-height:1.846;padding:3.6rem 3rem 3.6rem 3.6rem;height:100%;width:280px;position:fixed;right:0;top:0;z-index:700;overflow-y:auto;overflow-x:hidden;-webkit-transition:all 0.5s ease;transition:all 0.5s ease;-webkit-transform:translateZ(0);backface-visibility:hidden;-webkit-transform:translateX(100%);-ms-transform:translateX(100%);transform:translateX(100%);visibility:hidden;}
 .header-nav a,.header-nav a:visited{color:rgba(255, 255, 255, 0.5);}
 .header-nav a:hover,.header-nav a:focus,.header-nav a:active{color:white;}
 .header-nav h3{font-family:"montserrat-semibold", sans-serif;font-size:11px;line-height:1.5;text-transform:uppercase;letter-spacing:.25rem;margin-bottom:4.8rem;margin-top:.9rem;color:#39b54a;}
@@ -411,4 +411,4 @@ ul{list-style:none;padding-left:0;}
 @font-face{font-family:'Open Sans';font-style:normal;font-weight:800;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu1aB.woff2) format('woff2');unicode-range:U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;}
 @font-face{font-family:'Open Sans';font-style:normal;font-weight:800;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu1aB.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}
 @font-face{font-family:'Open Sans';font-style:normal;font-weight:800;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
-@font-face{font-family:'Open Sans';font-style:normal;font-weight:800;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:800;font-stretch:100%;src:url(https://fonts.gstatic.com/s/opensans/v26/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}

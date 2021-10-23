@@ -4,7 +4,6 @@ import GeneralInfo from "../GeneralInfo";
 import Oficina from "../Oficina";
 
 export default class BackOffice extends Component {
-  
   render() {
 
       return (        

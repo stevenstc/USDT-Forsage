@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {CopyToClipboard} from 'react-copy-to-clipboard';
+import { CopyToClipboard } from "react-copy-to-clipboard";
 import Utils from "../../utils";
 import contractAddress from "../Contract";
 
@@ -20,110 +20,154 @@ export default class EarnTron extends Component {
       canastas: [(
         <div className="col-12 col-lg-2 col-xl-4" key={"level"+1}>
           <div className="choose__item">
-            <span style={{"fontSize" : "22px"}}><br /><strong>Level 1 (Inactive) </strong></span>
+            <span style={{ fontSize: "22px" }}>
+              <br />
+              <strong>Level 1 (Inactive) </strong>
+            </span>
           </div>
         </div>
       ),
       (
         <div className="col-12 col-lg-2 col-xl-4" key={"level"+2}>
           <div className="choose__item">
-            <span style={{"fontSize" : "22px"}}><br /><strong>Level 2 (Inactive) </strong></span>
+            <span style={{ fontSize: "22px" }}>
+              <br />
+              <strong>Level 2 (Inactive) </strong>
+            </span>
           </div>
         </div>
       ),
       (
         <div className="col-12 col-lg-2 col-xl-4" key={"level"+3}>
           <div className="choose__item">
-            <span style={{"fontSize" : "22px"}}><br /><strong>Level 3 (Inactive) </strong></span>
+            <span style={{ fontSize: "22px" }}>
+              <br />
+              <strong>Level 3 (Inactive) </strong>
+            </span>
           </div>
         </div>
       ),
       (
         <div className="col-12 col-lg-2 col-xl-4" key={"level"+4}>
           <div className="choose__item">
-            <span style={{"fontSize" : "22px"}}><br /><strong>Level 4 (Inactive) </strong></span>
+            <span style={{ fontSize: "22px" }}>
+              <br />
+              <strong>Level 4 (Inactive) </strong>
+            </span>
           </div>
         </div>
       ),
       (
         <div className="col-12 col-lg-2 col-xl-4" key={"level"+5}>
           <div className="choose__item">
-            <span style={{"fontSize" : "22px"}}><br /><strong>Level 5 (Inactive) </strong></span>
+            <span style={{ fontSize: "22px" }}>
+              <br />
+              <strong>Level 5 (Inactive) </strong>
+            </span>
           </div>
         </div>
       ),
       (
         <div className="col-12 col-lg-2 col-xl-4" key={"level"+6}>
           <div className="choose__item">
-            <span style={{"fontSize" : "22px"}}><br /><strong>Level 6 (Inactive) </strong></span>
+            <span style={{ fontSize: "22px" }}>
+              <br />
+              <strong>Level 6 (Inactive) </strong>
+            </span>
           </div>
         </div>
       ),
       (
         <div className="col-12 col-lg-2 col-xl-4" key={"level"+7}>
           <div className="choose__item">
-            <span style={{"fontSize" : "22px"}}><br /><strong>Level 7 (Inactive) </strong></span>
+            <span style={{ fontSize: "22px" }}>
+              <br />
+              <strong>Level 7 (Inactive) </strong>
+            </span>
           </div>
         </div>
       ),
       (
         <div className="col-12 col-lg-2 col-xl-4" key={"level"+8}>
           <div className="choose__item">
-            <span style={{"fontSize" : "22px"}}><br /><strong>Level 8 (Inactive) </strong></span>
+            <span style={{ fontSize: "22px" }}>
+              <br />
+              <strong>Level 8 (Inactive) </strong>
+            </span>
           </div>
         </div>
       ),
       (
         <div className="col-12 col-lg-2 col-xl-4" key={"level"+9}>
           <div className="choose__item">
-            <span style={{"fontSize" : "22px"}}><br /><strong>Level 9 (Inactive) </strong></span>
+            <span style={{ fontSize: "22px" }}>
+              <br />
+              <strong>Level 9 (Inactive) </strong>
+            </span>
           </div>
         </div>
       ),
       (
         <div className="col-12 col-lg-2 col-xl-4" key={"level"+10}>
           <div className="choose__item">
-            <span style={{"fontSize" : "22px"}}><br /><strong>Level 10 (Inactive) </strong></span>
+            <span style={{ fontSize: "22px" }}>
+              <br />
+              <strong>Level 10 (Inactive) </strong>
+            </span>
           </div>
         </div>
       ),
       (
         <div className="col-12 col-lg-2 col-xl-4" key={"level"+11}>
           <div className="choose__item">
-            <span style={{"fontSize" : "22px"}}><br /><strong>Level 11 (Inactive) </strong></span>
+            <span style={{ fontSize: "22px" }}>
+              <br />
+              <strong>Level 11 (Inactive) </strong>
+            </span>
           </div>
         </div>
       ),
       (
         <div className="col-12 col-lg-2 col-xl-4" key={"level"+12}>
           <div className="choose__item">
-            <span style={{"fontSize" : "22px"}}><br /><strong>Level 12 (Inactive) </strong></span>
+            <span style={{ fontSize: "22px" }}>
+              <br />
+              <strong>Level 12 (Inactive) </strong>
+            </span>
           </div>
         </div>
       ),
       (
         <div className="col-12 col-lg-2 col-xl-4" key={"level"+13}>
           <div className="choose__item">
-            <span style={{"fontSize" : "22px"}}><br /><strong>Level 13 (Inactive) </strong></span>
+            <span style={{ fontSize: "22px" }}>
+              <br />
+              <strong>Level 13 (Inactive) </strong>
+            </span>
           </div>
         </div>
       ),
       (
         <div className="col-12 col-lg-2 col-xl-4" key={"level"+14}>
           <div className="choose__item">
-            <span style={{"fontSize" : "22px"}}><br /><strong>Level 14 (Inactive) </strong></span>
+            <span style={{ fontSize: "22px" }}>
+              <br />
+              <strong>Level 14 (Inactive) </strong>
+            </span>
           </div>
         </div>
       ),
       (
         <div className="col-12 col-lg-2 col-xl-4" key={"level"+15}>
           <div className="choose__item">
-            <span style={{"fontSize" : "22px"}}><br /><strong>Level 15 (Inactive) </strong></span>
+            <span style={{ fontSize: "22px" }}>
+              <br />
+              <strong>Level 15 (Inactive) </strong>
+            </span>
           </div>
         </div>
-      )
-    ]
-
+        ),
+      ],
     };
 
     this.Investors = this.Investors.bind(this);
@@ -133,40 +177,35 @@ export default class EarnTron extends Component {
 
   async componentDidMount() {
     await Utils.setContract(window.tronWeb, contractAddress);
-    setInterval(() => this.Link(),1*1000);
-    setInterval(() => this.Investors(),7*1000);
-  };
+    setInterval(() => this.Link(), 1 * 1000);
+    setInterval(() => this.Investors(), 7 * 1000);
+  }
 
   async Link() {
-
     let mydireccion = await window.tronWeb.trx.getAccount();
     console.log(mydireccion);
-      mydireccion = window.tronWeb.address.fromHex(mydireccion.address);
+    mydireccion = window.tronWeb.address.fromHex(mydireccion.address);
 
-      var user = await Utils.contract.users(mydireccion).call();
+    var user = await Utils.contract.users(mydireccion).call();
 
-    if( await Utils.contract.isUserExists(mydireccion).call() ){
-
+    if (await Utils.contract.isUserExists(mydireccion).call()) {
       let loc = document.location.href;
-      if(loc.indexOf('?')>0){
-        loc = loc.split('?')[0]
+      if (loc.indexOf("?") > 0) {
+        loc = loc.split("?")[0];
       }
-      
 
-      mydireccion = loc+'?ref='+parseInt(user.id._hex);
+      mydireccion = loc + "?ref=" + parseInt(user.id._hex);
       this.setState({
         link: mydireccion,
       });
-    }else{
+    } else {
       this.setState({
         link: "Haz una inversión para obtener el LINK de referido",
       });
     }
   }
-    
 
   async Investors() {
-
     var direccion = await window.tronWeb.trx.getAccount();
     direccion = window.tronWeb.address.fromHex(direccion.address);
 
@@ -178,38 +217,36 @@ export default class EarnTron extends Component {
     var personas = 0;
     var ganado = 0;
 
-    var levelPrice= [];
-    var ownerPrice= [];
+    var levelPrice = [];
+    var ownerPrice = [];
     levelPrice[1] = 20;
     ownerPrice[1] = 0;
     ownerPrice[4] = 4;
     var i;
     for (i = 2; i <= LAST_LEVEL; i++) {
-        levelPrice[i] = levelPrice[i-1] * 2;
-        if (i >= 5) {
-            ownerPrice[i] = ownerPrice[i-1] * 2;
-        }else{
-          if (i !== 4) {
-            ownerPrice[i] = 0;
-          } 
+      levelPrice[i] = levelPrice[i - 1] * 2;
+      if (i >= 5) {
+        ownerPrice[i] = ownerPrice[i - 1] * 2;
+      } else {
+        if (i !== 4) {
+          ownerPrice[i] = 0;
         }
+      }
     }
 
     //console.log(levelPrice);
     //console.log(ownerPrice);
 
     for (i = 1; i <= LAST_LEVEL; i++) {
-
       if (await Utils.contract.usersActiveX3Levels(direccion, i).call()) {
-
         invertido += levelPrice[i];
 
         var matrix = await Utils.contract.usersX3Matrix(direccion, i).call();
         matrix[3] = parseInt(matrix[3]._hex);
 
-        personas += (matrix[1].length+(matrix[3]*3));
+        personas += matrix[1].length + matrix[3] * 3;
 
-        ganado += (matrix[1].length+(matrix[3]*3))*(ownerPrice[i]);
+        ganado += (matrix[1].length + matrix[3] * 3) * ownerPrice[i];
 
         //console.log(ganado);
         canasta[i-1] = (
@@ -288,35 +325,27 @@ export default class EarnTron extends Component {
               <div class="Widget_widgetBackground__1F6dp" style={{display: 'none'}}></div>
           </div>
         );
-
       }
 
       this.setState({
-        canastas:canasta
-        
+        canastas: canasta,
       });
-
     }
 
     this.setState({
       invertido: invertido,
       ganado: ganado,
-      personas: personas
-      
+      personas: personas,
     });
+  }
 
-  };
-
-  async withdraw(){
+  async withdraw() {
     var cosa = await Utils.contract.withdraw().send();
     console.log(cosa);
-  };
-
+  }
 
   render() {
-
-    return (
-        <main class="Layout_content__3Ygen">              
+    return (<main class="Layout_content__3Ygen">              
           <section class="widget Widget_widget__32uL4">
             <header class="Widget_title__1U9X_" style={{ padding:'10px'}}>
                             <header class="dashboard-header">
@@ -368,7 +397,7 @@ export default class EarnTron extends Component {
               </div>
           </section>
           <div class="Widget_widgetBackground__1F6dp" style={{display: 'none'}}></div>              
-        </main>      
+        </main>   
     );
   }
 }
