@@ -132,13 +132,13 @@ class App extends Component {
       switch (getString) {
         case "BackOffice": 
         case "backOffice":
-        case "backoffice": return(<><BackOffice url={interrogant+getString}/></>);
+        case "backoffice": return(<BackOffice url={interrogant+getString}/>);
   
         case "ViewOffice": 
         case "viewOffice": 
-        case "viewoffice": return(<><BackOffice url={interrogant+getString}/></>);
+        case "viewoffice": return(<BackOffice url={interrogant+getString}/>);
       
-        default:  return(<><BackOffice url={interrogant+getString}/></>);
+        default:  return(<BackOffice url={interrogant+getString}/>);
       }
 
 
