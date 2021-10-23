@@ -8,7 +8,6 @@ export default class BackOffice extends Component {
   render() {
     return (
       <>
-        <div class="Layout_root__tsDUs">
           <div class="Layout_wrap__3suIr">
             <TronLinkInfo tronWeb={window.tronWeb} />
             <nav class="Sidebar_root__3k9LL">
@@ -123,7 +122,6 @@ export default class BackOffice extends Component {
               <Oficina />
             </main>
           </div>
-        </div>
       </>
     );
   }
