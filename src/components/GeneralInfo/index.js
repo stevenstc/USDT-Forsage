@@ -15,25 +15,22 @@ export default class GeneralInfo extends Component {
                     <tbody>
                         <tr>
                             <td>
-                                <p style={{fontSize: '18px'}}>My id</p>
-                                <p style={{fontSize: '18px'}}>Upline id</p>
-                                <p style={{fontSize: '18px'}}>Wallet</p>
+                                <p style={{fontSize: '16px'}}>My id</p>
+                                <p style={{fontSize: '16px'}}>Wallet</p>
                             </td>
                             <td style={{textAlign: 'right'}}>
                                 <p style={{fontWeight: 'bold', fontSize: '16px'}}>12</p>
-                                <p>1</p>
                                 <p style={{textAlign: 'right',fontSize: '16px'}}>1e356n5y5hh <i class="fa fa-clipboard text-white"></i></p>
                             </td>
                         </tr>
                         <tr>
-                            <td style={{fontSize: '18px', textAlign: 'left'}}>My partners</td>
-                            <td><p style={{fontSize: '18px', textAlign: 'right'}}>11</p></td>
+                            <td style={{fontSize: '16px', textAlign: 'left'}}>My partners</td>
+                            <td><p style={{fontSize: '16px', textAlign: 'right'}}>11</p></td>
                         </tr>
                         <tr>
-                            <td style={{fontSize: '18px', textAlign: 'left'}}>l earned</td>
+                            <td style={{fontSize: '16px', textAlign: 'left'}}>l earned</td>
                             <td style={{textAlign: 'right'}}>
-                                <p style={{fontSize: '28px'}}>$23232</p>
-                                <small><small>23423432 TRX</small></small>
+                                <p style={{fontSize: '16px'}}>$23232</p>
                             </td>
                         </tr>
                         <tr>
