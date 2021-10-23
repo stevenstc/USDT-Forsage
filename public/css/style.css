@@ -134,7 +134,14 @@ ul li{padding-left:.4rem;}
 @media only screen and (max-width: 400px){
 .header-menu-text{display:none;}
 }
-footer{padding:9rem 0 6rem;font-family:"montserrat-light", sans-serif;font-size:15px;line-height:2;text-align:center;color:rgba(255, 255, 255, 0.3);}
+footer{
+    padding:5px 0 5px;
+    font-family:"montserrat-light", sans-serif;
+    font-size:15px;
+    line-height:2;
+    text-align:center;
+    color:rgba(255, 255, 255, 0.3);
+}
 footer a{color:#FFFFFF;}
 footer a:hover,footer a:focus,footer a:active{color:#39b54a;}
 footer .row{max-width:980px;}
