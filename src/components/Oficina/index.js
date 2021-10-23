@@ -253,8 +253,8 @@ export default class EarnTron extends Component {
               <section class="widget Widget_widget__32uL4 widget-auth mx-auto pack pack-enable">
                   <header class="Widget_title__1U9X_">
                       <div class="pack-header pack-header-enable">
-                          <div class="pack-ind"><span class="badge badge-dark-no-border">1</span></div>
-                          <div class="text-center mb-sm" style={{padding: '5px'}}><h5>Level {i} || 400</h5></div>
+                          <div class="pack-ind"><span class="badge badge-dark-no-border">{i}</span></div>
+                          <div class="text-center mb-sm" style={{padding: '5px'}}><h6>Level {i} || 400</h6></div>
                       </div>
                   </header>
                   <div aria-hidden="false" class="rah-static rah-static--height-auto" style={{height: 'auto', overflow: 'visible'}}>
@@ -269,9 +269,8 @@ export default class EarnTron extends Component {
                                   <div class="mt row"></div>
                                   <div class="mt row"></div>
                                   <div class="mt row">
-                                    <div class="col-12 col-lg-2 col-xl-4"></div>
-                                    <div class="col-12 col-lg-3 col-xl-6"><button type="submit" class="auth-btn btn btn-success btn-sm" style={{color: 'white', width: '90%'}}>Buyed</button></div>
-                                    <div class="col-12 col-lg-2 col-xl-4"></div>
+                                  <div class="text-center mb-sm" style={{left: '30%'}}><button type="submit" class="auth-btn btn btn-success" style={{color: 'white', width:'100%'}}>Buyed</button></div>
+                                    
                                   </div>
                               </div>
                               <footer>
@@ -292,8 +291,8 @@ export default class EarnTron extends Component {
               <section class="widget Widget_widget__32uL4 widget-auth mx-auto pack pack-enable">
                   <header class="Widget_title__1U9X_">
                       <div class="pack-header pack-header-enable">
-                          <div class="pack-ind"><span class="badge badge-dark-no-border">1</span></div>
-                          <div class="text-center mb-sm" style={{padding: '5px'}}><h5>({i}) 400</h5></div>
+                          <div class="pack-ind"><span class="badge badge-dark-no-border">{i}</span></div>
+                          <div class="text-center mb-sm" style={{padding: '5px'}}><h6>({i}) 400</h6></div>
                       </div>
                   </header>
                   <div aria-hidden="false" class="rah-static rah-static--height-auto" style={{height: 'auto', overflow: 'visible'}}>
@@ -308,9 +307,8 @@ export default class EarnTron extends Component {
                                   <div class="mt row"></div>
                                   <div class="mt row"></div>
                                   <div class="mt row">
-                                    <div class="col-12 col-lg-2 col-xl-4"></div>
-                                    <div class="col-12 col-lg-3 col-xl-6"><button type="submit" class="auth-btn btn btn-success btn-sm" style={{color: 'white', width: '90%'}}>Buy level</button></div>
-                                    <div class="col-12 col-lg-2 col-xl-4"></div>
+                                  <div class="text-center mb-sm" style={{left: '30%'}}><button type="submit" class="auth-btn btn btn-success" style={{color: 'white', width:'100%'}}>Buy level</button></div>
+                                    
                                   </div>
                               </div>
                               <footer>

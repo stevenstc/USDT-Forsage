@@ -216,12 +216,7 @@ img{vertical-align:middle;border-style:none;}
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text{border-top-left-radius:0;border-bottom-left-radius:0;}
 .card-footer{padding:0.75rem 1.25rem;background-color:rgba(0, 0, 0, 0.03);border-top:1px solid rgba(0, 0, 0, 0.125);}
 .card-footer:last-child{border-radius:0 0 9px 9px;}
-.badge{display:inline-block;padding:4px 8px;font-size:0.875em;font-weight:600;line-height:1;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:0.3rem;transition:color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;}
-@media (prefers-reduced-motion: reduce){
-.badge{transition:none;}
-}
-.badge:empty{display:none;}
-.badge-gray{color:#f4f4f5;background-color:#595d78;}
+
 .bg-transparent{background-color:transparent!important;}
 .float-left{float:left!important;}
 .float-right{float:right!important;}
@@ -240,7 +235,6 @@ tr,img{page-break-inside:avoid;}
 p,h3{orphans:3;widows:3;}
 h3{page-break-after:avoid;}
 body{min-width:992px!important;}
-.badge{border:1px solid #000;}
 .table{border-collapse:collapse!important;}
 .table td{background-color:#f4f4f5!important;}
 }
@@ -268,7 +262,6 @@ body{min-width:992px!important;}
 .widget-auth h5{font-weight:400;text-align:center;}
 .form-control{font-family:"Open Sans", sans-serif;box-shadow:none;transition:border-color ease-in-out 0.15s, background-color ease-in-out 0.15s;background:#040620;border:none;}
 .form-control:focus{box-shadow:none;background:#040620;}
-.badge{padding:4px 8px;font-weight:600;font-size:14px;}
 .table{color:inherit;}
 h3,h5{font-weight:300;}
 small{font-size:85%;}
@@ -295,9 +288,6 @@ ul{list-style:none;padding-left:0;}
 .mt{margin-top:1rem;}
 .mt-0{margin-top:0;}
 .mb-sm{margin-bottom:0.5rem;}
-.badge{color:white;display:-webkit-inline-flex;display:inline-flex;border-radius:20px;font-size:12px;height:30px;width:30px;-webkit-align-items:center;align-items:center;vertical-align:middle;-webkit-justify-content:center;justify-content:center;background-color:black;}
-.badge-pink{background-color:#FA26A0;}
-.badge-dark-no-border{background-color:rgb(18,21,30);border:1px solid rgb(0, 204, 255);}
 
 .Widget_title__1U9X_{margin-top:0;color:#fff;}
 .Widget_title__1U9X_::after{display:block;clear:both;content:"";}
@@ -332,13 +322,35 @@ ul{list-style:none;padding-left:0;}
 @media (min-width: 576px){
 .Sidebar_content__1DsCZ{-webkit-user-select:auto!important;user-select:auto!important;}
 }
+@media (prefers-reduced-motion: reduce){
+    .badge{transition:none;}
+    }
+    .badge:empty{display:none;}
+    
 
-.badge{color:white;display:inline-flex;border-radius:20px;font-size:12px;height:30px;width:30px;align-items:center;vertical-align:middle;justify-content:center;background-color:black;}
+.badge{
+    color:white;
+    display:-webkit-inline-flex;
+    display:inline-flex;
+    border-radius:30px;
+    font-size:12px;
+    height:30px;
+    width:30px;
+    -webkit-align-items:center;
+    align-items:center;
+    vertical-align:middle;
+    -webkit-justify-content:center;
+    justify-content:center;
+    background-color:black; 
+    text-align:center;
+    white-space:nowrap;
+    vertical-align:baseline;
+    transition:color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
 .badge-pink{background-color:#FA26A0;}
 .badge-dark-no-border{background-color:rgb(18,21,30);border:1px solid rgb(0, 204, 255);}
 
-.pack-ind{position:absolute;left:-5px;top:-12px;height:50px;width:100px;}
-
+.pack-ind{position:absolute;left:-5px;top:-16px;height:50px;width:100px;}
 .pack{border-radius:20px;color:white;max-width:250px;max-height:270px;min-height:220px;}
 .pack-header{padding:0 10px;}
 .pack-body{min-height:80px;}
@@ -350,7 +362,6 @@ ul{list-style:none;padding-left:0;}
 .badge-left{position:absolute;left:10%;-webkit-transform:translateX(-10%);transform:translateX(-10%);}
 .badge-center{position:absolute;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);}
 .badge-right{position:absolute;left:90%;-webkit-transform:translateX(-90%);transform:translateX(-90%);}
-.pack-ind{position:absolute;left:-5px;top:-14px;height:50px;width:100px;}
 .badge-blue-light{background-color:#00ccff;}
 
 .Layout_root__tsDUs{height:100%;position:relative;left:0;top:5px;transition:left 0.3s ease-in-out;}
