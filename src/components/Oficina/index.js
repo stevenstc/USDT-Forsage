@@ -254,7 +254,7 @@ export default class EarnTron extends Component {
                   <header class="Widget_title__1U9X_">
                       <div class="pack-header pack-header-enable">
                           <div class="pack-ind"><span class="badge badge-dark-no-border">{i}</span></div>
-                          <div class="text-center mb-sm" style={{padding: '5px'}}><h6>Level {i} || 400</h6></div>
+                          <div class="text-center mb-sm" style={{padding: '5px'}}><h6> {20**i}</h6></div>
                       </div>
                   </header>
                   <div aria-hidden="false" class="rah-static rah-static--height-auto" style={{height: 'auto', overflow: 'visible'}}>
@@ -269,7 +269,7 @@ export default class EarnTron extends Component {
                                   <div class="mt row"></div>
                                   <div class="mt row"></div>
                                   <div class="mt row">
-                                  <div class="text-center mb-sm" style={{position:'relative',left: '20%'}}><button type="submit" class="auth-btn btn btn-success" style={{color: 'white', width:'100%'}}>Buyed</button></div>
+                                  <div class="text-center mb-sm" style={{position:'relative',left: '20%'}}><button class="auth-btn btn btn-secondary" style={{color: 'white', width:'100%'}}>Buyed</button></div>
                                     
                                   </div>
                               </div>
@@ -292,7 +292,7 @@ export default class EarnTron extends Component {
                   <header class="Widget_title__1U9X_">
                       <div class="pack-header pack-header-enable">
                           <div class="pack-ind"><span class="badge badge-dark-no-border">{i}</span></div>
-                          <div class="text-center mb-sm" style={{padding: '5px'}}><h6>({i}) 400</h6></div>
+                          <div class="text-center mb-sm" style={{padding: '5px'}}><h6>({i}) {20**i}</h6></div>
                       </div>
                   </header>
                   <div aria-hidden="false" class="rah-static rah-static--height-auto" style={{height: 'auto', overflow: 'visible'}}>
@@ -307,7 +307,7 @@ export default class EarnTron extends Component {
                                   <div class="mt row"></div>
                                   <div class="mt row"></div>
                                   <div class="mt row">
-                                  <div class="text-center mb-sm" style={{position:'relative',left: '20%'}}><button type="submit" class="auth-btn btn btn-success" style={{color: 'white', width:'100%'}}>Buy level</button></div>
+                                  <div class="text-center mb-sm" style={{position:'relative',left: '20%'}}><button class="auth-btn btn btn-success" style={{color: 'white', width:'100%'}}>Buy level</button></div>
                                     
                                   </div>
                               </div>
