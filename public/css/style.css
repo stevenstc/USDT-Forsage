@@ -327,7 +327,9 @@ ul{list-style:none;padding-left:0;}
     }
     .badge:empty{display:none;}
     
-
+.badge-on{
+    background-color:skyblue !important; 
+}
 .badge{
     color:white;
     display:-webkit-inline-flex;
