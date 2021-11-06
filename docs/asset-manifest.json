@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/static/js/main.4a60244a.chunk.js",
-    "main.js.map": "/static/js/main.4a60244a.chunk.js.map",
+    "main.js": "/static/js/main.6df26667.chunk.js",
+    "main.js.map": "/static/js/main.6df26667.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8ad47052.js",
     "runtime-main.js.map": "/static/js/runtime-main.8ad47052.js.map",
-    "static/js/2.8a5958a0.chunk.js": "/static/js/2.8a5958a0.chunk.js",
-    "static/js/2.8a5958a0.chunk.js.map": "/static/js/2.8a5958a0.chunk.js.map",
+    "static/js/2.5269258c.chunk.js": "/static/js/2.5269258c.chunk.js",
+    "static/js/2.5269258c.chunk.js.map": "/static/js/2.5269258c.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b43d5906ca5ed2212a3005695a9fee82.js": "/precache-manifest.b43d5906ca5ed2212a3005695a9fee82.js",
+    "precache-manifest.aa61ebffc58d217dc35a4e3a02ef9590.js": "/precache-manifest.aa61ebffc58d217dc35a4e3a02ef9590.js",
     "service-worker.js": "/service-worker.js",
-    "static/js/2.8a5958a0.chunk.js.LICENSE.txt": "/static/js/2.8a5958a0.chunk.js.LICENSE.txt",
+    "static/js/2.5269258c.chunk.js.LICENSE.txt": "/static/js/2.5269258c.chunk.js.LICENSE.txt",
     "static/media/TronLinkLogo.png": "/static/media/TronLinkLogo.d3a8f115.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8ad47052.js",
-    "static/js/2.8a5958a0.chunk.js",
-    "static/js/main.4a60244a.chunk.js"
+    "static/js/2.5269258c.chunk.js",
+    "static/js/main.6df26667.chunk.js"
   ]
 }

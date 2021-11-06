@@ -2729,6 +2729,42 @@ html.no-csstransitions .home-content__main {
  * # clients
  *
  * ------------------------------------------------------------------- */
+ summary {
+    font-size: 3rem;
+    font-weight: 600;
+   /* background-color: #fff;*/
+    color: #333;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border-radius: 0.25rem;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+  }
+  details > summary::after {
+    position: absolute;
+    content: "+";
+    right: 20px;
+  }
+  details[open] > summary::after {
+    position: absolute;
+    content: "-";
+    right: 20px;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  
+ 
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+  }
+  @keyframes sweep {
+    0%    {opacity: 0; margin-top: -10px}
+    100%  {opacity: 1; margin-top: 0px}
+  }
+
 .s-clients {
     padding-top: 16.2rem;
     padding-bottom: 16.8rem;
