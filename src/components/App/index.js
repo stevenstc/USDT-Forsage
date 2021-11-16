@@ -134,6 +134,8 @@ class App extends Component {
         case "backOffice":
         case "backoffice": return(<BackOffice url={interrogant+getString}/>);
   
+        case "View": 
+        case "view": 
         case "ViewOffice": 
         case "viewOffice": 
         case "viewoffice": return(<BackOffice url={interrogant+getString}/>);
