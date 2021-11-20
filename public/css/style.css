@@ -16,7 +16,7 @@
 
 .icon-arrow-up:before{content:"\e906";}
 
-body{margin:0;}
+body{margin:0;font-family:sans-serif!important;}
 footer,header,nav,section{display:block;}
 main{display:block;}
 a{background-color:transparent;-webkit-text-decoration-skip:objects;}
@@ -48,7 +48,7 @@ input[type="text"]{-webkit-appearance:none;-moz-appearance:none;-ms-appearance:n
 .row{width:94%;max-width:1200px;margin:0 auto;}
 .row:after{content:"";display:table;clear:both;}
 .row .row{width:auto;max-width:none;margin-left:-20px;margin-right:-20px;}
-[class*="col-"]{float:left;padding:0 20px;}
+[class*="col-"]{float:left;padding:0 0px;}
 .col-twelve{width:100%;}
 @media only screen and (max-width: 1200px){
 .row .row{margin-left:-15px;margin-right:-15px;}
@@ -328,10 +328,10 @@ ul{list-style:none;padding-left:0;}
     .badge:empty{display:none;}
     
 .badge-on{
-    background-color:skyblue !important; 
+    background-color:rgb(30, 175, 11) !important; 
 }
 .badge{
-    color:white;
+    color:rgb(199, 199, 199);
     display:-webkit-inline-flex;
     display:inline-flex;
     border-radius:30px;
@@ -350,21 +350,21 @@ ul{list-style:none;padding-left:0;}
     transition:color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .badge-pink{background-color:#FA26A0;}
-.badge-dark-no-border{background-color:rgb(18,21,30);border:1px solid rgb(0, 204, 255);}
+.badge-dark-no-border{background-color:rgb(18,21,30);border:1px solid rgb(0, 255, 13);}
 
-.pack-ind{position:absolute;left:-5px;top:-16px;height:50px;width:100px;}
+.pack-ind{position:absolute;left:-18px;top:-20px;height:50px;width:100px;}
 .pack{border-radius:20px;color:white;max-width:250px;max-height:270px;min-height:220px;}
 .pack-header{padding:0 10px;}
 .pack-body{min-height:80px;}
 .pack-buy{background-color:#262626;}
-.pack-enable{border:3px;border-color:#00ccff;border-style:solid;}
+.pack-enable{border:3px;border-color:#00a308;border-style:solid;}
 .pack-disabled{background-color:#262626;}
-.pack-header-enable{border-bottom:3px solid #00ccff;}
+.pack-header-enable{border-bottom:3px solid #00a308;}
 .pack-header-buy,.pack-header-disabled{border-bottom:3px solid #12151e;}
 .badge-left{position:absolute;left:10%;-webkit-transform:translateX(-10%);transform:translateX(-10%);}
 .badge-center{position:absolute;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);}
 .badge-right{position:absolute;left:90%;-webkit-transform:translateX(-90%);transform:translateX(-90%);}
-.badge-blue-light{background-color:#00ccff;}
+.badge-blue-light{background-color:#00a308;}
 
 .Layout_root__tsDUs{height:100%;position:relative;left:0;top:5px;transition:left 0.3s ease-in-out;}
 .Layout_wrap__3suIr{position:relative;min-height:100vh;display:flex;margin-left:350px;flex-direction:column;left:0;right:0;transition:left 0.3s ease-in-out;}

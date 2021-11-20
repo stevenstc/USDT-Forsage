@@ -24,7 +24,7 @@ export default class GeneralInfo extends Component {
 
     async Link() {
         let mydireccion = await window.tronWeb.trx.getAccount();
-        console.log(mydireccion);
+
         mydireccion = window.tronWeb.address.fromHex(mydireccion.address);
     
         var user = await Utils.contract.users(mydireccion).call();

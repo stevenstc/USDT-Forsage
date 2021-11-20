@@ -192,8 +192,9 @@ export default class EarnTron extends Component {
     return (
       <>
         <div class="row">     
+        <img src="/images/TMC-blanco-verde.svg" width="100%" alt="TMC"></img>
           <table class="table">
-              <tbody>
+              <tbody> 
                   <tr>
                       <td>
                           <p style={{fontSize: '18px'}}>Balance</p>

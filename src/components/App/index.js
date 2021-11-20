@@ -99,6 +99,10 @@ class App extends Component {
     }
 
     Utils.setTronWeb(window.tronWeb);
+
+    if(!this.state.tronWeb.loggedIn){
+        document.location.reload();
+    }
   }
 
   render() {
@@ -134,8 +138,6 @@ class App extends Component {
         case "backOffice":
         case "backoffice": return(<BackOffice url={interrogant+getString}/>);
   
-        case "View": 
-        case "view": 
         case "ViewOffice": 
         case "viewOffice": 
         case "viewoffice": return(<BackOffice url={interrogant+getString}/>);
