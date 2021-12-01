@@ -1,1 +1,528 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TMC BackOffice TRON</title><link href="css/bootstrap-4.4.1.css" rel="stylesheet"><link href="css/style.css" rel="stylesheet"><script src="https://use.fontawesome.com/75b3ae30c3.js"></script></head><body class="bg-dark" style="background:radial-gradient(farthest-side at 100% 0,#0c0c0f 100%,#0c0c0f) 0 0/cover no-repeat fixed"><nav class="navbar navbar-expand- navbar-dark bg-dark"><a class="navbar-brand" href="#">BackOffice</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse" id="navbarSupportedContent"><ul class="navbar-nav mr-auto"><li class="nav-item active"><a class="nav-link" href="/">Home</a></li></ul></div></nav><div id="root"></div><footer class="text-center" style="height:50px;max-height:50px"><p>Copyright © TMC. All rights reserved.</p></footer><script src="js/jquery-3.4.1.min.js"></script><script src="js/popper.min.js"></script><script src="js/bootstrap-4.4.1.js"></script><script>!function(e){function r(r){for(var n,f,a=r[0],l=r[1],i=r[2],p=0,s=[];p<a.length;p++)f=a[p],Object.prototype.hasOwnProperty.call(o,f)&&o[f]&&s.push(o[f][0]),o[f]=0;for(n in l)Object.prototype.hasOwnProperty.call(l,n)&&(e[n]=l[n]);for(c&&c(r);s.length;)s.shift()();return u.push.apply(u,i||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,a=1;a<t.length;a++){var l=t[a];0!==o[l]&&(n=!1)}n&&(u.splice(r--,1),e=f(f.s=t[0]))}return e}var n={},o={1:0},u=[];function f(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,f),t.l=!0,t.exports}f.m=e,f.c=n,f.d=function(e,r,t){f.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},f.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},f.t=function(e,r){if(1&r&&(e=f(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(f.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)f.d(t,n,function(r){return e[r]}.bind(null,n));return t},f.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return f.d(r,"a",r),r},f.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},f.p="/backoffice/";var a=this["webpackJsonpusdt-forsage"]=this["webpackJsonpusdt-forsage"]||[],l=a.push.bind(a);a.push=r,a=a.slice();for(var i=0;i<a.length;i++)r(a[i]);var c=l;t()}([])</script><script src="/backoffice/static/js/2.d7b7c595.chunk.js"></script><script src="/backoffice/static/js/main.322d1414.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>TMC</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="icon.svg" type="image/x-icon">
+    <link rel="icon" href="icon.svg" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/TMC-blanco-verde.svg" height="100%" alt="Homepage">
+            </a>
+        </div>
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>Navigation</h3>
+                
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll"  href="#about" title="about">BackOffice</a></li>
+                    <li><a class="smoothscroll"  href="#services" title="services">ViewOffice</a></li>
+                    <li><a class="smoothscroll"  href="#contact" title="contact">Contract</a></li>
+                </ul>
+    
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="#"><i class="fa fa-telegram"></i></a>
+                    </li>
+                </ul>
+
+            </div> 
+        </nav>  
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> 
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h1>
+                    #1 BlockChain decentralized USDT ecosystem
+                </h1>
+
+                <div class="home-content__buttons">
+                    <a href="/backoffice" class="btn btn--stroke">
+                        Register
+                    </a>
+                    <a href="/backoffice" class="btn btn--stroke">
+                        Login
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="home-content__scroll">
+                <a href="#about" class="scroll-link smoothscroll">
+                    <span>Scroll Down</span>
+                </a>
+            </div>
+
+            <div class="home-content__line"></div>
+
+        </div> 
+
+
+        <ul class="home-social">
+            <li>
+                <a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-behance" aria-hidden="true"></i><span>Behance</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a>
+            </li>
+        </ul> 
+      
+
+    </section>
+
+    <!-- about
+    ================================================== -->
+    <section id='about' class="s-about">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead subhead--dark">Business transactions</h3>
+                <h1 class="display-1 display-1--light">CrowdFunding Global Decentralized Plataform</h1>
+            </div>
+        </div>
+
+        <div class="row about-desc" data-aos="fade-up">
+            <div class="col-full">
+              <h1>
+                    Crowdfunding Global Decentralized Platform Based On Smart Contract’s Technology Connects People To Directly Engage In Personal And Business Transactions.
+              </h1>
+            </div>
+        </div> 
+
+        <!--
+        <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+                
+            <div class="col-block stats__col ">
+                <div class="stats__count">1505</div>
+                <h5>All participants</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">127</div>
+                <h5>Joined in 24H</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">109</div>
+                <h5>USDT <br>Member results</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">102</div>
+                <h5>USDT <br>Results in 24H</h5> 
+            </div>
+
+        </div> 
+        -->
+
+        <div class="about__line"></div>
+
+    </section> 
+
+
+    <!-- services
+    ================================================== -->
+    <section id='services' class="s-services bg-black">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Now</h3>
+                <h1 class="display-2" style="color: #FFFFFF;">The Next Generation Defi Ecosystem</h1>
+            </div>
+        </div> 
+
+        <div class="row services-list block-1-2 block-tab-full">
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-paint-brush"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2" style="color: #FFFFFF;">Immutability</h3>
+                    <p>Blockchain secures the algorithm, therefore nobody, even the creators or developers, can change, cancel, stop, or alter your transactions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-group"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2" style="color: #FFFFFF;">Automatic</h3>
+                    <p>All transactions between the community members are executed directly from one personal wallet to another. There are no accounts to withdraw from, THEMONOPOLYCLUB does not store your funds.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-megaphone"></i>
+                </div>  
+                <div class="service-text">
+                    <h3 class="h2" style="color: #FFFFFF;">Autonomous</h3>
+                    <p>The ecosystem is built on the smart contract technology that is completely autonomous, which excludes any human factor.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-earth"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2" style="color: #FFFFFF;">Transparent and decentralized</h3>
+                    <p>The smart contract code is open, and anyone anytime can observe the entire transaction history. There are no managers or admins at the head, the creators are the same platform participants like everyone else.
+                    </p>
+                </div>
+            </div>
+
+        </div> 
+
+    </section> 
+
+
+    <!-- clients
+    ================================================== -->
+    <section id="clients" class="s-clients">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">FAQ</h3>
+                <h1 class="display-2">FREQUENTLY ASKED QUESTIONS</h1>
+            </div>
+        </div> 
+
+        <div class="row clients-testimonials" data-aos="fade-up">
+            <div class="col-full">
+                <div class="testimonials__slide">
+                  <details close="true">
+                    <summary><h3 class="h2">What is THE MONOPOLY CLUB?</h3></summary>
+                    <div class="faq__content">
+                      <p>
+                        THE MONOPOLY CLUB is a Global Decentralized Community and the
+                        first USDT marketing matrix in history with immediate reward
+                        distribution built on Tron blockchain smart contract, which
+                        makes it fully decentralized, transparent, secure and
+                        unstoppable.
+                      </p>
+                    </div>
+                  </details>
+                </div>
+                <div class="testimonials__slide">
+                  <details close="true">
+                    <summary><h3 class="h2">How long is THE MONOPOLY CLUB going to work?</h3></summary>
+                    <div class="faq__content">
+                      <p>
+                        THE MONOPOLY CLUB is associated with blockchain will keep
+                        working forever. As it is a decentralized system, it is not
+                        abided by the rules and regulations set by any government body
+                        and cannot be hacked or shut down. It will remain in the
+                        Blockchain forever.
+                      </p>
+                    </div>
+                  </details>
+                </div>
+                <div class="testimonials__slide">
+                  <details close="true">
+                    <summary><h3 class="h2">Are Smart Contracts Legal in My Country?</h3></summary>
+                    <div class="faq__content">
+                      <p>
+                        The smart contract does not depend on the site, it works on a
+                        blockchain that cannot be blocked. TheMonopolyClub does not
+                        fall under the legal laws and regulations of any of the
+                        countries in the world, it can not be illegal, unless, it will
+                        be done specifically for the purpose of attempting to
+                        discredit or take under control manually. Smart Contracts are
+                        like Bitcoin or NFT, they are not illegal, but also not legal.
+                      </p>
+                      <p>
+                        The Monopoly Club is a DeFi Ecosystem and all this is aimed at
+                        development, realization of dreams of thousands of people,
+                        helping people, transparency, security and decentralization.
+                        The Monopoly Club has only good goals, given new technologies
+                        that do not depend on governments and banks.
+                      </p>
+                    </div>
+                  </details>
+                </div>
+                <div class="testimonials__slide">
+                  <details close="true">
+                    <summary><h3 class="h2">Why THE MONOPOLY CLUB is Not a Pyramid?</h3></summary>
+                    <div class="faq__content">
+                      <p>
+                        Firstly, in a Pyramid scheme, old participants get paid with
+                        the money from new participants. Sooner or later the scheme
+                        operator decides to pull it to keep their profits. It’s
+                        mathematically impossible for this scheme to go on forever
+                        anyway.
+                      </p>
+                      <p>
+                        Secondly, a Ponzi scheme is always centralized! Every pyramid
+                        has an operator who can push the button to stop payouts and
+                        claim all the money. Once that happens, the pyramid is done.
+                      </p>
+                      <p>
+                        THE MONOPOLY CLUB doesn’t have a single thing in common with
+                        the scheme above:
+                      </p>
+                      <p>
+                        All transactions are made between users: from wallet to
+                        wallet. The smart contract balance is always zero. THE
+                        MONOPOLY CLUB doesn’t have an administrator who could
+                        terminate the project. THE MONOPOLY CLUB is 100%
+                        decentralized. To stop the platform, no one can, because it’s
+                        functioning is ensured by a smart contract that cannot be
+                        deleted or changed.
+                      </p>
+                    </div>
+                  </details>
+                </div>
+                <div class="testimonials__slide">
+                  <details close="true">
+                    <summary>
+                      <h3 class="h2">Do I Need to Withdraw Money from THE MONOPOLY CLUB?</h3>
+                    </summary>
+                    <div class="faq__content">
+                      <p>
+                        THE MONOPOLY CLUB does not retain any funds, Your income
+                        arrives instantly into your personal wallet directly from your
+                        partners. Only you have access to your wallet and no one else
+                        can manage your money.
+                      </p>
+                    </div>
+                  </details>
+                </div>
+                <div class="testimonials__slide">
+                  <details close="true">
+                    <summary><h3 class="h2">Is THE MONOPOLY CLUB a Company?</h3></summary>
+                    <div class="faq__content">
+                      <p>
+                        THE MONOPOLY CLUB is NOT a company (especially an investment
+                        company) that is managed by a CEO and a board of management,
+                        where you can bring a complaint against the system that fails
+                        to live up to expectations. In reality, it is a self-executing
+                        smart contract instructed to carry out sequences of
+                        arithmetic, logical or Pre-determined operations automatically
+                        via computer programming in order to serve a specific purpose.
+                        As such, there is no middleman or intermediary involved to
+                        issue the refund for the initial expense. Just like when you
+                        buy an NFT, you cannot get your funds back because the
+                        transaction cannot be reversed and when you make the purchase
+                        you are agreeing to buy an NFT.
+                      </p>
+                    </div>
+                  </details>
+                </div>
+                <div class="testimonials__slide">
+                  <details close="true">
+                    <summary><h3 class="h2">Who Created THE MONOPOLY CLUB?</h3></summary>
+                    <div class="faq__content">
+                      <p>
+                        The idea of THE MONOPOLY CLUB belongs to a group of crypto
+                        enthusiasts, who are also participants in the community and
+                        have no special privileges.
+                      </p>
+                    </div>
+                  </details>
+                </div>
+                <div class="testimonials__slide">
+                  <details close="true">
+                    <summary><h3 class="h2">Who Manages The Platform?</h3></summary>
+                    <div class="faq__content">
+                      <p>
+                        THE MONOPOLY CLUB platform doesn’t have a manager. The smart
+                        contract works on the Tron Blockchain. This means that the
+                        platform is fully decentralized(it has no leaders or admins).
+                      </p>
+                    </div>
+                  </details>
+                </div>
+                <div class="testimonials__slide">
+                  <details close="true">
+                    <summary><h3 class="h2">Is THE MONOPOLY CLUB Legal or illegal?</h3></summary>
+                    <div class="faq__content">
+                      <p>
+                        To put it simply, itʼs neither legal nor illegal. This is
+                        because THE MONOPOLY CLUB does not need to be regulated or be
+                        approved to operate online, since it is free from government
+                        control due to its decentralized nature. Fact is, it is not a
+                        corporate entity or company. It does not do business
+                        transactions between parties, like an MLM company would.
+                      </p>
+                      <p>
+                        THE MONOPOLY CLUB is a system built on pre defined codes
+                        deployed by the developers on a blockchain network, we know
+                        this as smart contract.
+                      </p>
+                    </div>
+                  </details>
+                </div>
+                <div class="testimonials__slide">
+                  <details close="true">
+                    <summary><h3 class="h2">Can I Join THE MONOPOLY CLUB in My Country?</h3></summary>
+                    <div class="faq__content">
+                      <p>
+                        Absolutely, THE MONOPOLY CLUB is international and you can
+                        join from all the countries in the world, you just need a
+                        mobile device, tablet or laptop and internet connection.
+                      </p>
+                    </div>
+                  </details>
+                </div>
+              </div>
+        </div> 
+
+    </section> 
+
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright TMC 2021</span> 
+                    <span>Site Template by <a href="https://www.themonopolyclub.com/">TMC</a></span>	
+                </div>
+
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> 
+
+    </footer> 
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> 
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

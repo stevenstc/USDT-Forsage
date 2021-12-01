@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b2f3e991ecbafb3041cb8b3cec29926a",
+    "revision": "4683b5401552592035aefc7292500820",
     "url": "/backoffice/index.html"
   },
   {
